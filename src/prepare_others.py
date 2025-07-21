@@ -6,7 +6,7 @@ from pymatgen.io.vasp.inputs import Kpoints
 import os
 
 
-poscar = Poscar.from_file("pymatgen/POSCAR")
+poscar = Poscar.from_file("outputs/POSCAR")
 monolayer_MoS2_struct = poscar.structure
 vasp_input_set = MPRelaxSet(monolayer_MoS2_struct)
 
